@@ -19,7 +19,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.testng.Assert;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -57,6 +57,7 @@ public class StepDefs {
 		cap.setCapability(ChromeOptions.CAPABILITY, chromeOptions);*/
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.get("https://www.google.com");
 		
 
 	}
@@ -85,6 +86,10 @@ public class StepDefs {
 	@Given("^User is on Home Page$")
 	public void user_is_on_Home_Page() throws Throwable {
 		System.out.println("user is on home page");
+		String titleval=driver.getTitle();
+		Assert.assertEquals(titleval, "Google");
+		//Assert.fail();
+		
 	   
 	}
 
@@ -101,7 +106,7 @@ public class StepDefs {
 
 	@Then("^Message displayed Login Successfully$")
 	public void message_displayed_Login_Successfully() throws Throwable {
-		System.out.println("user sucessfully login");
+		System.out.println("user sucessfully login in");
 	  
 	}
 

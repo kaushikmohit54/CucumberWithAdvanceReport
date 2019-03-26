@@ -8,9 +8,9 @@
 	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
+			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
@@ -23,5 +23,14 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="Libs/cucumber-core-1.2.4.jar"/>
+	<classpathentry kind="lib" path="Libs/cucumber-java-1.2.4.jar"/>
+	<classpathentry kind="lib" path="Libs/cucumber-junit-1.2.4.jar"/>
+	<classpathentry kind="lib" path="Libs/cucumber-jvm-deps-1.0.5.jar"/>
+	<classpathentry kind="lib" path="Libs/gherkin-2.12.2.jar"/>
+	<classpathentry kind="lib" path="Libs/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="Libs/maven-reporting-api-2.2.0.jar"/>
+	<classpathentry kind="lib" path="Libs/mockito-all-2.0.2-beta.jar"/>
+	<classpathentry kind="lib" path="Libs/selenium-java-2.41.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

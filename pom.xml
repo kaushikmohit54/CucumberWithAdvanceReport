@@ -119,7 +119,7 @@
 <outputDirectory>${project.build.directory}/Report/cucumber-reports</outputDirectory>
 <cucumberOutput>${project.build.directory}/cucumber/cucumber.json</cucumberOutput>
 <skippedFails>true</skippedFails>
-<enableFlashCharts>false</enableFlashCharts>
+<enableFlashCharts>true</enableFlashCharts>
 </configuration>
 </execution>
 </executions>

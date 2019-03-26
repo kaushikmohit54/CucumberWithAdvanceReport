@@ -5,7 +5,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "D:\\GitRepo_Automation\\automation_project\\CcumberAdvanceReport\\features\\login.feature", //the path of the feature files
+		features = "F:\\GitRepo_Automation\\automation_project\\cucumberwithAdvanceReporting\\features\\login.feature", //the path of the feature files
 		glue={"stepDefinitions"}, //the path of the step definition files
 				plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"}, //to generate different types of reporting
 		monochrome = true, //display the console output in a proper readable format
